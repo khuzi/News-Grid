@@ -1,0 +1,14 @@
+.Social {
+    justify-self: center;
+    display: flex;
+}
+
+.Social i {
+    color: #777;
+    margin-right: 0.5rem;
+    transition: all 0.2s ease-in;
+}
+
+.Social i:hover {
+    color: var(--primary-color);
+}

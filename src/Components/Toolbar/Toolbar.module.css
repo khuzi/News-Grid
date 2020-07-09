@@ -1,0 +1,29 @@
+.Navbar {
+    position: sticky;
+    background: #fff;
+    top: 0;
+    z-index: 2;
+}
+
+.NavContainer {
+    display: grid;
+    grid-template-columns: 6fr 2fr 2fr;
+    align-items: center;
+    padding: 1rem;
+}
+
+@media(max-width: 768px) {
+    .NavContainer {
+        grid-template-columns: 1fr;
+        grid-gap: 1.2rem;
+    }
+    .NavContainer > *:nth-child(2){
+        display: none;
+    }
+    .NavContainer> *:last-child,*:first-child{
+        justify-self: center;
+    }
+    .NavContainer > *:last-child{
+        padding: 0.5rem;
+    }
+}

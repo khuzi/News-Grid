@@ -1,0 +1,9 @@
+
+.BtnLight{ background: var(--light-color); }
+.BtnPrimary{ background: var(--primary-color); }
+.BtnSecondary{ background: var(--secondary-color); }
+.BtnBlock{ 
+    display: block; 
+    width: 100%;
+    text-align: center;
+}

@@ -1,0 +1,46 @@
+.Showcase {
+    color: #fff;
+    background: var(--dark-color);
+    padding: 2rem;
+    position: relative;
+}
+
+.Showcase::before {
+    content: '';
+    background: url('../../assets//img/featured.jpg') no-repeat center center/cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0.4;
+    background-attachment: fixed;
+}
+
+.Showcase .ShowcaseContainer {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    height: 50vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.Showcase .ShowcaseContent {
+    z-index: 1;
+}
+
+.Showcase .ShowcaseContent p{
+    margin-bottom: 1rem;
+}
+
+@media(max-width: 960px) {
+    .Showcase .ShowcaseContainer {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 360px) {
+ .Showcase .ShowcaseContainer {
+     font-size: 0.75rem;
+ } 
+}

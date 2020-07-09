@@ -1,0 +1,15 @@
+.ArticleCard {
+    background: #fff;
+}
+
+.ArticleCard .Meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #eee;
+    padding: 0.5rem;
+}
+
+.ArticleCard .Meta > *:last-child{
+    margin-top: 0.5rem;
+}

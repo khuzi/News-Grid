@@ -1,0 +1,39 @@
+.MainCard {
+  background: #fff;
+  padding: 1rem;
+}
+
+.ArticlesContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+}
+
+.ArticlesContainer > *:first-child,
+.ArticlesContainer > *:last-child {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1rem;
+  grid-column: 1 / span 2;
+  align-items: center;
+}
+
+.ArticlesContainer > *:last-child {
+  grid-column: 2 / span 2;
+}
+
+@media (max-width: 768px) {
+  .ArticlesContainer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .ArticlesContainer > *:first-child,
+  .ArticlesContainer > *:last-child {
+    grid-template-columns: 1fr;
+    grid-column: 1;
+  }
+}
+@media (max-width: 600px) {
+  .ArticlesContainer {
+    grid-template-columns: 1fr;
+  }
+}

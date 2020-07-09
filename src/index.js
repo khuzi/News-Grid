@@ -3,10 +3,14 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+import { BrowserRouter } from 'react-router-dom';
 
+import ContextProvider from './Container/Context/Context';
+
+const app =  <ContextProvider><BrowserRouter><App /></BrowserRouter></ContextProvider> 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    {app}
   </React.StrictMode>,
   document.getElementById('root')
 );

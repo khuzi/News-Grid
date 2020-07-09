@@ -1,0 +1,16 @@
+.ListItem a{
+    padding: 0.75rem;
+    font-weight: bold;
+    transition: all 0.3s ease-out;
+}
+
+
+.ListItem a.active {
+    background: var(--primary-color);
+    color: #fff;
+}
+
+.ListItem a:hover {
+    background: var(--light-color);
+    color: var(--dark-color);
+}

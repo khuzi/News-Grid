@@ -1,0 +1,21 @@
+.formGroup {
+    margin: 0.75rem;
+}
+
+.formGroup label {
+    display: block;
+    margin-bottom: 0.2rem;
+}
+
+.formGroup input , .formGroup textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+}
+
+
+.formGroup textarea {
+    height: 10rem;
+}
